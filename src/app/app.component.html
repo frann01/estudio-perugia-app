@@ -1,8 +1,7 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="#inicio" class="brand" (click)="cerrarMenu()">
-      <!-- <span class="brand-mark">EP</span> -->
-      <img src="/public/logo.png" />
+      <img class="brand-logo" src="/logo.png" />
       <span class="brand-name">Estudio Perugia<small> & asociados</small></span>
     </a>
 
@@ -12,12 +11,12 @@
       <a href="#nosotros" (click)="cerrarMenu()">Sobre el Estudio</a>
     </nav>
 
-    <a class="header-phone" href="tel:+541100000000">
+    <a class="header-phone" href="tel:+5491136570287">
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path
           d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1L6.6 10.8z" />
       </svg>
-      <span>+54 11 0000-0000</span>
+      <span>+54 9 11 3657-0287</span>
     </a>
 
     <button class="menu-toggle" type="button" (click)="toggleMenu()" [attr.aria-expanded]="menuAbierto"
@@ -41,8 +40,7 @@
 
         </p>
         <div class="hero-actions">
-          <a href="#contacto" class="btn btn-primary">Solicitar consulta</a>
-          <a href="#areas" class="btn btn-ghost">Ver áreas de práctica</a>
+          <a href="#contacto" class="btn btn-primary">Agendar una Consulta</a>
         </div>
       </div>
       <!-- <div class="hero-visual" aria-hidden="true">
@@ -51,44 +49,6 @@
             <path d="M12 2 3 6v6c0 5 3.8 9.4 9 10 5.2-.6 9-5 9-10V6l-9-4z" />
           </svg>
           <p>Confidencialidad y compromiso en cada gestión</p>
-        </div>
-      </div> -->
-    </div>
-  </section>
-
-  <!-- SOBRE NOSOTROS -->
-  <section id="nosotros" class="about">
-    <div class="container about-inner " style="display: flex;">
-      <div class="about-copy">
-        <p class="section-eyebrow">Sobre el estudio</p>
-        <h2>Un equipo jurídico a su lado en cada decisión</h2>
-        <p>
-          El Estudio Perugia nació con el propósito de brindar un acompañamiento legal riguroso
-          y accesible. Trabajamos con estudio de cada caso en profundidad, comunicación
-          transparente y estrategias a medida, ya sea para particulares, familias o empresas.
-        </p>
-        <p>
-          Nuestro equipo de abogados combina especialización técnica con una atención cercana,
-          para que cada cliente entienda con claridad sus opciones y el estado de su asunto en
-          todo momento.
-        </p>
-      </div>
-      <!-- <div class="stats">
-        <div class="stat">
-          <span class="stat-number">20+</span>
-          <span class="stat-label">Años de experiencia</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">800+</span>
-          <span class="stat-label">Casos resueltos</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">98%</span>
-          <span class="stat-label">Clientes satisfechos</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">24/48h</span>
-          <span class="stat-label">Tiempo de respuesta</span>
         </div>
       </div> -->
     </div>
@@ -112,8 +72,11 @@
             </svg>
           </div>
           <h3>Derecho Civil y Comercial</h3>
-          <p>Contratos, daños y perjuicios, obligaciones, cobros de deudas y conflictos comerciales.</p>
+          <p class="eyebrow">Patrocinio legal firme ante accidentes, incumplimientos y responsabilidad civil</p>
+          <p>Ofrecemos representación judicial y extrajudicial en reclamos de daños y perjuicios derivados de accidentes de tránsito, accidentes en la vía pública, incumplimientos contractuales y mala praxis. Negociamos indemnizaciones ante compañías de seguros y entablamos demandas por responsabilidad civil contractual y extracontractual. Asimismo, tramitamos juicios ejecutivos (cobro de pagarés, cheques, expensas y deudas de dinero) e intermediamos en instancias de mediación previa obligatoria.
+          </p>
         </article>
+
 
         <article class="card">
           <div class="card-icon">
@@ -121,8 +84,9 @@
               <path d="M3 21h18M9 8h1m4 0h1M6 8v13m12-13v13M6 8l6-5 6 5M9 12h1m4 0h1M9 16h1m4 0h1" />
             </svg>
           </div>
-          <h3>Derecho Laboral</h3>
-          <p>Despidos, indemnizaciones, accidentes de trabajo y asesoramiento a empleadores.</p>
+          <h3>Derecho Previsional y Seguridad Social</h3>
+          <p class="eyebrow">Acompañamiento integral para tu jubilación o pensión.</p>
+          <p>Especialistas en la gestión y asesoramiento en materia previsional. Nos encargamos de la liquidación y tramitación de jubilaciones, pensiones por fallecimiento , optimizando los tiempos para que obtengas el beneficio que te corresponde. Si ya sos jubilado y tu haber no refleja lo que aportaste, iniciamos juicios de reajuste de haberes contra la administración para defender tu patrimonio y lograr el reconocimiento de tus derechos.</p>
         </article>
 
         <article class="card">
@@ -131,8 +95,9 @@
               <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21c0-3.3 3.6-6 8-6s8 2.7 8 6" />
             </svg>
           </div>
-          <h3>Familia y Sucesiones</h3>
-          <p>Divorcios, alimentos, régimen de comunicación y trámites sucesorios.</p>
+          <h3>Derecho de Familia</h3>
+          <p class="eyebrow">Soluciones legales humanas y eficientes para proteger a tu familia</p>
+          <p>Ofrecemos patrocinio integral en trámites de divorcio vincular (unilateral o de mutuo acuerdo) y confección de convenios reguladores. Garantizamos la defensa de tus derechos y los de tus hijos en reclamos de cuota alimentaria (fijación, aumento y ejecuciones por incumplimiento), cuidado personal, régimen de comunicación, juicios de filiación y reclamo de compensación económica o uniones convivenciales. Buscamos acuerdos ágiles que resuelvan el conflicto resguardando el bienestar familiar.</p>
         </article>
 
         <article class="card">
@@ -141,8 +106,9 @@
               <path d="M12 2 3 6v6c0 5 3.8 9.4 9 10 5.2-.6 9-5 9-10V6l-9-4z" />
             </svg>
           </div>
-          <h3>Derecho Penal</h3>
-          <p>Defensa en causas penales, contravencionales y asesoramiento en denuncias.</p>
+          <h3>Derecho Sucesorio</h3>
+          <p class="eyebrow">Planificación patrimonial y tramitación eficiente de sucesiones</p>
+          <p>Acompañamos a nuestros clientes en todo el proceso de sucesiones ab intestato (sin testamento) y testamentarias. Nos ocupamos del inicio del trámite, la inscripción de la declaratoria de herederos, la adjudicación de bienes muebles e inmuebles, y la mediación entre coherederos para lograr un proceso transparente, veloz y sin complicaciones.</p>
         </article>
 
         <article class="card">
@@ -151,19 +117,23 @@
               <path d="M4 21V9l8-6 8 6v12M4 21h16M9 21v-6h6v6" />
             </svg>
           </div>
-          <h3>Derecho Societario</h3>
-          <p>Constitución de sociedades, contratos societarios y gobierno corporativo.</p>
+          <h3>Derecho Contractual y asesoramiento Civil</h3>
+          <p class="eyebrow">Redacción y blindaje de contratos para resguardar tus operaciones</p>
+          <p>Redactamos, revisamos y negociamos todo tipo de contratos civiles y comerciales (alquileres, compraventas, locaciones de servicio, mutuos y comodatos) garantizando la máxima seguridad jurídica y evitando futuros litigios. Asesoramos en la resolución de rescisiones contractuales, desalojos y reclamos derivados del cumplimiento de acuerdos.</p>
         </article>
+      </div>
+    </div>
+  </section>
 
-        <article class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24">
-              <path d="M4 4h16v16H4zM4 9h16M9 4v16" />
-            </svg>
-          </div>
-          <h3>Consultas generales</h3>
-          <p>Un primer diagnóstico legal para orientarlo sobre cómo encarar su situación.</p>
-        </article>
+    <!-- SOBRE NOSOTROS -->
+  <section id="nosotros" class="about">
+    <div class="container about-inner " style="display: flex;">
+      <div class="about-copy">
+        <p class="section-eyebrow">Sobre el estudio</p>
+        <h2>Tu tranquilidad jurídica es nuestra prioridad</h2>
+        <p>
+          En Estudio Jurídico Perugia y Asociados entendemos que enfrentar un trámite legal o una controversia judicial requiere respuestas rápidas, certeras y transparentes. Brindamos asesoramiento integral y patrocinio adaptado a las necesidades de cada cliente, acompañándote en cada etapa para lograr la resolución más conveniente, protegiendo tus derechos y tu bienestar.
+        </p>
       </div>
     </div>
   </section>
@@ -173,10 +143,9 @@
     <div class="container contact-inner">
       <div class="contact-info">
         <p class="section-eyebrow">Contacto</p>
-        <h2>Conversemos sobre su caso</h2>
+        <h2>Ponete en contacto con nosotros</h2>
         <p class="section-lead">
-          Complete el formulario y un miembro de nuestro equipo se comunicará con usted
-          dentro de las 24/48 horas hábiles.
+           No dejes pasar los plazos legales. Hacé tu consulta hoy mismo con nuestro equipo.
         </p>
 
         <ul class="info-list">
@@ -184,20 +153,20 @@
             <svg viewBox="0 0 24 24">
               <path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11zM12 13a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
             </svg>
-            <span>Av. Corrientes 1234, Piso 5, CABA, Argentina</span>
+            <span>Alvear Nro. 814 Quilmes, Buenos Aires</span>
           </li>
           <li>
             <svg viewBox="0 0 24 24">
               <path
                 d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1L6.6 10.8z" />
             </svg>
-            <span>+54 11 0000-0000</span>
+            <span>+54 9 11 3657-0287</span>
           </li>
           <li>
             <svg viewBox="0 0 24 24">
               <path d="M3 5h18v14H3zM3 5l9 7 9-7" />
             </svg>
-            <span>contacto&#64;estudioperugia.com.ar</span>
+            <span>Perugiayasociados&#64;gmail.com</span>
           </li>
           <li>
             <svg viewBox="0 0 24 24">
@@ -264,7 +233,7 @@
           </div>
 
           <p class="form-disclaimer">
-            Al enviar este formulario, acepta ser contactado por Estudio Perugia respecto de su consulta.
+            Al enviar este formulario, acepta ser contactado por Estudio Perugia & asociados respecto de su consulta.
             Sus datos serán tratados de forma confidencial.
           </p>
 
@@ -280,10 +249,10 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-brand">
-      <span class="brand-mark">EP</span>
-      <span>Estudio Perugia</span>
+      <img style="width: 40px;" src="/logo.png" />
+      <span>Estudio Perugia & asociados</span>
     </div>
-    <p>&copy; {{ '2026' }} Estudio Jurídico Perugia. Todos los derechos reservados.</p>
-    <p class="footer-note">Buenos Aires, Argentina</p>
+    <p>&copy; {{ '2026' }} Estudio Perugia & asociados. Todos los derechos reservados.</p>
+    <p class="footer-note">Quilmes, Buenos Aires</p>
   </div>
 </footer>

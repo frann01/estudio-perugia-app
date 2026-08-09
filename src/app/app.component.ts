@@ -52,8 +52,19 @@ export class AppComponent {
     if (form.invalid) {
       return;
     }
-    // TODO: conectar con backend / servicio de envío de correo cuando esté disponible.
+    this.sendWhatsAppMessage();
     this.enviado = true;
     form.resetForm();
+  }
+
+  sendWhatsAppMessage(): void {
+    const baseUrl = 'https://wa.me/';
+    const finalMessage = `Hola, soy ${this.model.nombre}. Mi correo es ${this.model.email} y mi teléfono es ${this.model.telefono}. Área de consulta: ${this.model.area}. Mensaje: ${this.model.mensaje}`;
+    const encodedMessage = encodeURIComponent(finalMessage);
+
+    const finalUrl = `${baseUrl}+5491136570287?text=${encodedMessage}`;
+    
+    // Opens WhatsApp Web/App in a new browser tab
+    window.open(finalUrl, '_blank');
   }
 }

@@ -361,6 +361,7 @@ svg {
   color: var(--navy);
 }
 
+
 .stat-label {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 0.8rem;
@@ -374,8 +375,6 @@ svg {
 }
 
 .cards-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 28px;
   margin-top: 48px;
 }
@@ -387,7 +386,7 @@ svg {
   padding: 32px 28px;
   box-shadow: var(--shadow);
   transition: transform 0.2s ease;
-
+  margin-bottom: 10px;
   &:hover { transform: translateY(-4px); }
 }
 
@@ -671,6 +670,13 @@ svg {
 
   .brand-mark { width: 34px; height: 34px; font-size: 0.85rem; }
 }
+
+.brand-logo {
+  width: 70px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
 
 .footer-note {
   margin-left: auto;
