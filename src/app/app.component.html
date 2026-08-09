@@ -1,24 +1,27 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="#inicio" class="brand" (click)="cerrarMenu()">
-      <span class="brand-mark">EP</span>
-      <span class="brand-name">Estudio Perugia<small>Abogados</small></span>
+      <!-- <span class="brand-mark">EP</span> -->
+      <img src="/public/logo.png" />
+      <span class="brand-name">Estudio Perugia<small> & asociados</small></span>
     </a>
 
     <nav class="main-nav" [class.open]="menuAbierto">
-      <a href="#inicio" (click)="cerrarMenu()">Inicio</a>
-      <a href="#nosotros" (click)="cerrarMenu()">Nosotros</a>
-      <a href="#areas" (click)="cerrarMenu()">Áreas de práctica</a>
-      <a href="#testimonios" (click)="cerrarMenu()">Testimonios</a>
       <a href="#contacto" class="nav-cta" (click)="cerrarMenu()">Contacto</a>
+      <a href="#areas" (click)="cerrarMenu()">Servicios</a>
+      <a href="#nosotros" (click)="cerrarMenu()">Sobre el Estudio</a>
     </nav>
 
     <a class="header-phone" href="tel:+541100000000">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1L6.6 10.8z" />
+      </svg>
       <span>+54 11 0000-0000</span>
     </a>
 
-    <button class="menu-toggle" type="button" (click)="toggleMenu()" [attr.aria-expanded]="menuAbierto" aria-label="Abrir menú">
+    <button class="menu-toggle" type="button" (click)="toggleMenu()" [attr.aria-expanded]="menuAbierto"
+      aria-label="Abrir menú">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -30,34 +33,32 @@
   <section id="inicio" class="hero">
     <div class="container hero-inner">
       <div class="hero-copy">
-        <p class="eyebrow">Estudio Jurídico Perugia · Buenos Aires, Argentina</p>
+        <p class="eyebrow">Estudio Jurídico Perugia & Asociados · Quilmes, Buenos Aires</p>
         <h1>Asesoramiento legal claro, cercano y con resultados.</h1>
         <p class="hero-lead">
-          Más de 20 años defendiendo los intereses de personas y empresas en Argentina.
-          Combinamos experiencia jurídica con trato personalizado en cada caso.
+          Soluciones legales eficaces, claras y personalizadas. Defendemos tus derechos y resguardamos tu patrimonio con
+          compromiso ético y rigor profesional.
+
         </p>
         <div class="hero-actions">
-          <a href="#contacto" class="btn btn-primary">Solicitar consulta gratuita</a>
+          <a href="#contacto" class="btn btn-primary">Solicitar consulta</a>
           <a href="#areas" class="btn btn-ghost">Ver áreas de práctica</a>
         </div>
-        <ul class="hero-trust">
-          <li>+20 años de trayectoria</li>
-          <li>+800 casos resueltos</li>
-          <li>Matriculados CPACF</li>
-        </ul>
       </div>
-      <div class="hero-visual" aria-hidden="true">
+      <!-- <div class="hero-visual" aria-hidden="true">
         <div class="hero-card">
-          <svg viewBox="0 0 24 24"><path d="M12 2 3 6v6c0 5 3.8 9.4 9 10 5.2-.6 9-5 9-10V6l-9-4z"/></svg>
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2 3 6v6c0 5 3.8 9.4 9 10 5.2-.6 9-5 9-10V6l-9-4z" />
+          </svg>
           <p>Confidencialidad y compromiso en cada gestión</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
   <!-- SOBRE NOSOTROS -->
   <section id="nosotros" class="about">
-    <div class="container about-inner">
+    <div class="container about-inner " style="display: flex;">
       <div class="about-copy">
         <p class="section-eyebrow">Sobre el estudio</p>
         <h2>Un equipo jurídico a su lado en cada decisión</h2>
@@ -72,7 +73,7 @@
           todo momento.
         </p>
       </div>
-      <div class="stats">
+      <!-- <div class="stats">
         <div class="stat">
           <span class="stat-number">20+</span>
           <span class="stat-label">Años de experiencia</span>
@@ -89,7 +90,7 @@
           <span class="stat-number">24/48h</span>
           <span class="stat-label">Tiempo de respuesta</span>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -106,7 +107,9 @@
       <div class="cards-grid">
         <article class="card">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 3v18M5 8l-3 6a4 4 0 0 0 8 0l-3-6M19 8l-3 6a4 4 0 0 0 8 0l-3-6M5 8h14M9 3h6"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 3v18M5 8l-3 6a4 4 0 0 0 8 0l-3-6M19 8l-3 6a4 4 0 0 0 8 0l-3-6M5 8h14M9 3h6" />
+            </svg>
           </div>
           <h3>Derecho Civil y Comercial</h3>
           <p>Contratos, daños y perjuicios, obligaciones, cobros de deudas y conflictos comerciales.</p>
@@ -114,7 +117,9 @@
 
         <article class="card">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24"><path d="M3 21h18M9 8h1m4 0h1M6 8v13m12-13v13M6 8l6-5 6 5M9 12h1m4 0h1M9 16h1m4 0h1"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M3 21h18M9 8h1m4 0h1M6 8v13m12-13v13M6 8l6-5 6 5M9 12h1m4 0h1M9 16h1m4 0h1" />
+            </svg>
           </div>
           <h3>Derecho Laboral</h3>
           <p>Despidos, indemnizaciones, accidentes de trabajo y asesoramiento a empleadores.</p>
@@ -122,7 +127,9 @@
 
         <article class="card">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21c0-3.3 3.6-6 8-6s8 2.7 8 6"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21c0-3.3 3.6-6 8-6s8 2.7 8 6" />
+            </svg>
           </div>
           <h3>Familia y Sucesiones</h3>
           <p>Divorcios, alimentos, régimen de comunicación y trámites sucesorios.</p>
@@ -130,7 +137,9 @@
 
         <article class="card">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 2 3 6v6c0 5 3.8 9.4 9 10 5.2-.6 9-5 9-10V6l-9-4z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2 3 6v6c0 5 3.8 9.4 9 10 5.2-.6 9-5 9-10V6l-9-4z" />
+            </svg>
           </div>
           <h3>Derecho Penal</h3>
           <p>Defensa en causas penales, contravencionales y asesoramiento en denuncias.</p>
@@ -138,7 +147,9 @@
 
         <article class="card">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24"><path d="M4 21V9l8-6 8 6v12M4 21h16M9 21v-6h6v6"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M4 21V9l8-6 8 6v12M4 21h16M9 21v-6h6v6" />
+            </svg>
           </div>
           <h3>Derecho Societario</h3>
           <p>Constitución de sociedades, contratos societarios y gobierno corporativo.</p>
@@ -146,78 +157,14 @@
 
         <article class="card">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 9h16M9 4v16"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M4 4h16v16H4zM4 9h16M9 4v16" />
+            </svg>
           </div>
           <h3>Consultas generales</h3>
           <p>Un primer diagnóstico legal para orientarlo sobre cómo encarar su situación.</p>
         </article>
       </div>
-    </div>
-  </section>
-
-  <!-- POR QUE ELEGIRNOS -->
-  <section class="why">
-    <div class="container why-inner">
-      <div class="why-visual" aria-hidden="true">
-        <div class="why-card">
-          <span class="why-quote">&ldquo;</span>
-          <p>Estudiamos cada caso como si fuera el único, porque para el cliente lo es.</p>
-        </div>
-      </div>
-      <div class="why-copy">
-        <p class="section-eyebrow">Por qué elegirnos</p>
-        <h2>Cercanía, experiencia y resultados concretos</h2>
-        <ul class="why-list">
-          <li>
-            <strong>Primera consulta sin cargo.</strong>
-            <span>Analizamos su caso antes de definir honorarios.</span>
-          </li>
-          <li>
-            <strong>Comunicación permanente.</strong>
-            <span>Seguimiento del expediente y respuestas claras en cada etapa.</span>
-          </li>
-          <li>
-            <strong>Honorarios transparentes.</strong>
-            <span>Acordamos por escrito el costo y la modalidad antes de empezar.</span>
-          </li>
-          <li>
-            <strong>Equipo multidisciplinario.</strong>
-            <span>Trabajamos junto a contadores y peritos cuando el caso lo requiere.</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIOS -->
-  <section id="testimonios" class="testimonials">
-    <div class="container">
-      <p class="section-eyebrow center">Testimonios</p>
-      <h2 class="center">La confianza de nuestros clientes</h2>
-
-      <div class="testimonial-grid">
-        <blockquote class="testimonial">
-          <p>“Me acompañaron durante todo el proceso de sucesión con mucha paciencia y claridad. Recomendable.”</p>
-          <footer>María L. — Derecho de Familia</footer>
-        </blockquote>
-        <blockquote class="testimonial">
-          <p>“Resolvieron un conflicto comercial complejo en tiempo y forma. Muy profesionales.”</p>
-          <footer>Javier R. — Pyme del sector textil</footer>
-        </blockquote>
-        <blockquote class="testimonial">
-          <p>“Excelente atención en mi caso laboral, siempre disponibles para responder mis dudas.”</p>
-          <footer>Carla D. — Derecho Laboral</footer>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-banner">
-    <div class="container cta-inner">
-      <h2>¿Necesita asesoramiento legal?</h2>
-      <p>Cuéntenos su situación y le responderemos a la brevedad con los próximos pasos a seguir.</p>
-      <a href="#contacto" class="btn btn-light">Hablar con un abogado</a>
     </div>
   </section>
 
@@ -234,19 +181,28 @@
 
         <ul class="info-list">
           <li>
-            <svg viewBox="0 0 24 24"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11zM12 13a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11zM12 13a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+            </svg>
             <span>Av. Corrientes 1234, Piso 5, CABA, Argentina</span>
           </li>
           <li>
-            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1L6.6 10.8z" />
+            </svg>
             <span>+54 11 0000-0000</span>
           </li>
           <li>
-            <svg viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 5l9 7 9-7"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M3 5h18v14H3zM3 5l9 7 9-7" />
+            </svg>
             <span>contacto&#64;estudioperugia.com.ar</span>
           </li>
           <li>
-            <svg viewBox="0 0 24 24"><path d="M12 8v4l3 2M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 8v4l3 2M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z" />
+            </svg>
             <span>Lunes a viernes, 9 a 18 hs</span>
           </li>
         </ul>
@@ -254,96 +210,66 @@
 
       <div class="contact-form-wrap">
         @if (enviado) {
-          <div class="form-success" role="status">
-            <h3>¡Gracias por escribirnos!</h3>
-            <p>Recibimos su consulta y nos pondremos en contacto a la brevedad.</p>
-          </div>
+        <div class="form-success" role="status">
+          <h3>¡Gracias por escribirnos!</h3>
+          <p>Recibimos su consulta y nos pondremos en contacto a la brevedad.</p>
+        </div>
         } @else {
-          <form class="contact-form" #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate>
-            <div class="form-row">
-              <label for="nombre">Nombre y apellido *</label>
-              <input
-                id="nombre"
-                name="nombre"
-                type="text"
-                required
-                minlength="2"
-                [(ngModel)]="model.nombre"
-                #nombre="ngModel"
-                placeholder="Su nombre completo" />
-              @if (nombre.invalid && nombre.touched) {
-                <small class="form-error">Ingrese su nombre.</small>
+        <form class="contact-form" #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate>
+          <div class="form-row">
+            <label for="nombre">Nombre y apellido *</label>
+            <input id="nombre" name="nombre" type="text" required minlength="2" [(ngModel)]="model.nombre"
+              #nombre="ngModel" placeholder="Su nombre completo" />
+            @if (nombre.invalid && nombre.touched) {
+            <small class="form-error">Ingrese su nombre.</small>
+            }
+          </div>
+
+          <div class="form-row form-row-split">
+            <div>
+              <label for="email">Email *</label>
+              <input id="email" name="email" type="email" required email [(ngModel)]="model.email" #email="ngModel"
+                placeholder="nombre@correo.com" />
+              @if (email.invalid && email.touched) {
+              <small class="form-error">Ingrese un email válido.</small>
               }
             </div>
-
-            <div class="form-row form-row-split">
-              <div>
-                <label for="email">Email *</label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  required
-                  email
-                  [(ngModel)]="model.email"
-                  #email="ngModel"
-                  placeholder="nombre@correo.com" />
-                @if (email.invalid && email.touched) {
-                  <small class="form-error">Ingrese un email válido.</small>
-                }
-              </div>
-              <div>
-                <label for="telefono">Teléfono</label>
-                <input
-                  id="telefono"
-                  name="telefono"
-                  type="tel"
-                  [(ngModel)]="model.telefono"
-                  placeholder="+54 11 0000-0000" />
-              </div>
+            <div>
+              <label for="telefono">Teléfono</label>
+              <input id="telefono" name="telefono" type="tel" [(ngModel)]="model.telefono"
+                placeholder="+54 11 0000-0000" />
             </div>
+          </div>
 
-            <div class="form-row">
-              <label for="area">Área de interés *</label>
-              <select
-                id="area"
-                name="area"
-                required
-                [(ngModel)]="model.area"
-                #area="ngModel">
-                <option value="" disabled selected>Seleccione un área</option>
-                @for (a of areas; track a) {
-                  <option [value]="a">{{ a }}</option>
-                }
-              </select>
-              @if (area.invalid && area.touched) {
-                <small class="form-error">Seleccione un área de consulta.</small>
+          <div class="form-row">
+            <label for="area">Área de interés *</label>
+            <select id="area" name="area" required [(ngModel)]="model.area" #area="ngModel">
+              <option value="" disabled selected>Seleccione un área</option>
+              @for (a of areas; track a) {
+              <option [value]="a">{{ a }}</option>
               }
-            </div>
+            </select>
+            @if (area.invalid && area.touched) {
+            <small class="form-error">Seleccione un área de consulta.</small>
+            }
+          </div>
 
-            <div class="form-row">
-              <label for="mensaje">Cuéntenos su consulta *</label>
-              <textarea
-                id="mensaje"
-                name="mensaje"
-                rows="5"
-                required
-                minlength="10"
-                [(ngModel)]="model.mensaje"
-                #mensaje="ngModel"
-                placeholder="Describa brevemente su situación"></textarea>
-              @if (mensaje.invalid && mensaje.touched) {
-                <small class="form-error">Cuéntenos brevemente su consulta (mín. 10 caracteres).</small>
-              }
-            </div>
+          <div class="form-row">
+            <label for="mensaje">Cuéntenos su consulta *</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required minlength="10" [(ngModel)]="model.mensaje"
+              #mensaje="ngModel" placeholder="Describa brevemente su situación"></textarea>
+            @if (mensaje.invalid && mensaje.touched) {
+            <small class="form-error">Cuéntenos brevemente su consulta (mín. 10 caracteres).</small>
+            }
+          </div>
 
-            <p class="form-disclaimer">
-              Al enviar este formulario, acepta ser contactado por Estudio Perugia respecto de su consulta.
-              Sus datos serán tratados de forma confidencial.
-            </p>
+          <p class="form-disclaimer">
+            Al enviar este formulario, acepta ser contactado por Estudio Perugia respecto de su consulta.
+            Sus datos serán tratados de forma confidencial.
+          </p>
 
-            <button type="submit" class="btn btn-primary btn-block">Enviar consulta</button>
-          </form>
+          <button type="submit" class="btn btn-primary btn-block">Enviar consulta</button>
+        </form>
         }
       </div>
     </div>
